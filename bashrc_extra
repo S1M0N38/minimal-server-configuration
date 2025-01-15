@@ -1,0 +1,46 @@
+################################################################################
+# Minimal server configuration
+################################################################################
+
+################################################################################
+# Env vars
+################################################################################
+
+# Editor
+# export VISUAL="nvim" # (ONLY USE IF YOU KNOW vim/neovim)
+# export EDITOR="nvim" # (ONLY USE IF YOU KNOW vim/neovim)
+
+# XDG dirs
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+
+# uv
+export UV_CACHE_DIR="/data/big/$USER/uv/cache"                   # [CHANGE ACCORDINGLY]
+export UV_PYTHON_INSTALL_DIR="/data/big/$USER/uv/python_install" # [CHANGE ACCORDINGLY]
+export UV_TOOL_DIR="/data/big/$USER/uv/tools"                    # [CHANGE ACCORDINGLY]
+
+# HuggingFace
+export HF_HOME="/data/big/$USER/huggingface" # [CHANGE ACCORDINGLY]
+export HF_HUB_DISABLE_TELEMETRY=1
+
+# fzf
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
+
+# Path to binaries (rg, fd, fzf, nvim, uv, uv-installed-bin)
+export PATH="$HOME/.local/bin:$PATH"
+
+################################################################################
+# vi mode
+################################################################################
+
+# (ONLY USE IF YOU KNOW WANT VIM-LIKE NAVIGATION IN CLI)
+# set -o vi
+# bind -f "$HOME/.inputrc"
+# bind -m vi-command '"v": ""'
+
+################################################################################
+# fzf
+################################################################################
+
+eval "$(fzf --bash)"
