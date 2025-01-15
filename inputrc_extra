@@ -1,0 +1,7 @@
+# This file is used in conjunction with the bash vi mode:
+# - if you are in normal mode the cursor is shown as a block
+# - if you are in insert mode the cursor is shown as a beam
+
+set show-mode-in-prompt on
+set vi-cmd-mode-string \1\e[2 q\2
+set vi-ins-mode-string \1\e[6 q\2
