@@ -146,6 +146,11 @@ Here are just **some custom** keymaps defined by this minimal configuration. All
 - <kbd>⌥</kbd> + <kbd>k</kbd> : move to the top pane
 - <kbd>⌥</kbd> + <kbd>l</kbd> : move to the left pane
 
+### fzf
+
+- <kbd>⌃</kbd> + <kbd>r</kbd> : fuzzy find in command history
+- <kbd>⌃</kbd> + <kbd>t</kbd> : fuzzy find files
+
 ### Neovim
 
 ##### Windows
@@ -173,13 +178,10 @@ Here are just **some custom** keymaps defined by this minimal configuration. All
 
 - <kbd>Space</kbd> <kbd>Space</kbd> : find files
 - <kbd>Space</kbd> <kbd>,</kbd> : find buffers
+- <kbd>Space</kbd> <kbd>f</kbd> <kbd>r</kbd> : find recent files
 
 ##### Search Picker
 
+- <kbd>Space</kbd> <kbd>s</kbd> <kbd>k</kbd> : search for available keymaps
 - <kbd>Space</kbd> <kbd>s</kbd> <kbd>g</kbd> : search with ripgrep
 - <kbd>Space</kbd> <kbd>s</kbd> <kbd>h</kbd> : search neovim help
-
-### fzf
-
-- <kbd>⌃</kbd> + <kbd>r</kbd> : fuzzy find in command history
-- <kbd>⌃</kbd> + <kbd>t</kbd> : fuzzy find files
