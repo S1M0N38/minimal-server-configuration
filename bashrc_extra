@@ -37,7 +37,9 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # (ONLY USE IF YOU KNOW WANT VIM-LIKE NAVIGATION IN CLI)
 # set -o vi
-# bind -f "$HOME/.inputrc"
+# bind 'set show-mode-in-prompt on'
+# bind 'set vi-cmd-mode-string \1\e[2 q\2' # block cursor for normal mode
+# bind 'set vi-ins-mode-string \1\e[6 q\2' # beam cursor for insert mode
 # bind -m vi-command '"v": ""'
 
 ################################################################################
