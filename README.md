@@ -88,7 +88,7 @@ rm -rf fd-v10.2.0-x86_64-unknown-linux-musl*
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz
 tar -xzf ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz
 mv ripgrep-14.1.1-x86_64-unknown-linux-musl/rg ~/.local/bin/
-rm ripgrep-14.1.1-x86_64-unknown-linux-musl*
+rm -rf ripgrep-14.1.1-x86_64-unknown-linux-musl*
 ```
 
 ### Bash
