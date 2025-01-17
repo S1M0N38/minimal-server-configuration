@@ -126,7 +126,10 @@ Python is not installed system-wide. The application `uv` can be used to:
 ```
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-2. Read uv [Getting Started](https://docs.astral.sh/uv/getting-started/) section of uv documentation
+2. Read the uv [Getting Started](https://docs.astral.sh/uv/getting-started/) section of the uv documentation
+
+> [!TIP]
+> uv documentation describes [how to use uv with Jupyter Notebooks](https://docs.astral.sh/uv/guides/integration/jupyter/) (from VS Code as well).
 
 
 ## Usage
