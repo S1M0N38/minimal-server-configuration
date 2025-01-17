@@ -19,6 +19,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export UV_CACHE_DIR="/data/big/$USER/uv/cache"                   # [CHANGE ACCORDINGLY]
 export UV_PYTHON_INSTALL_DIR="/data/big/$USER/uv/python_install" # [CHANGE ACCORDINGLY]
 export UV_TOOL_DIR="/data/big/$USER/uv/tools"                    # [CHANGE ACCORDINGLY]
+export UV_PYTHON_PREFERENCE="only-managed"
 
 # HuggingFace
 export HF_HOME="/data/big/$USER/huggingface" # [CHANGE ACCORDINGLY]
