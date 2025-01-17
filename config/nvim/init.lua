@@ -132,6 +132,11 @@ later(function()
 	vim.ui.select = require("mini.pick").ui_select
 end)
 
+-- Extra pickers
+later(function()
+	require("mini.extra").setup()
+end)
+
 --------------------------------------------------------------------------------
 -- Autocmds
 --------------------------------------------------------------------------------
@@ -197,11 +202,17 @@ end, { desc = "Find Files (git)" })
 map("n", "<leader>fc", function()
 	require("mini.pick").builtin.files({}, { source = { cwd = "~/.config" } })
 end, { desc = "Find Config" })
+map("n", "<leader>fr", function()
+	require("mini.extra").pickers.oldfiles()
+end, { desc = "Find Recent" })
 
--- Picker: Search in files
+-- Picker: Search
 map("n", "<leader>sg", function()
 	require("mini.pick").builtin.grep_live()
 end, { desc = "Search Grep" })
 map("n", "<leader>sh", function()
 	require("mini.pick").builtin.help()
 end, { desc = "Search Help" })
+map("n", "<leader>sk", function()
+	require("mini.extra").pickers.grep_live()
+end, { desc = "Search Keymaps" })
